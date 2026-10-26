@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Tables and Forms</title>
+</head>
+
+<body>
+    <hr>
+    <h1 style="text-align: center;">Tables and Forms</h1>
+    <hr>
+    <table border="1" style="width: 50%; margin: 0 auto; border-collapse: collapse;">
+        <caption style="text-align: center;">Student Marks Table</caption>
+        <thead style="background-color: lightgray;">
+            <tr>
+                <th>S.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody align="right">
+
+            <tr style="text-align: left; background-color: lightgreen;">
+                <td style="padding:15px;">1</td>
+                <td colspan="2">Ravi</td>
+                <td>Shankar</td>
+                <td rowspan="2">85</td>
+            </tr>
+            <tr style="text-align: left; background-color: lightblue;">
+                <td>2</td>
+                <td style="border: 3px solid yellow;margin-left:10px;">Prakash</td>
+                <td>Natarajan</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Siva</td>
+                <td>Kumar</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kavin</td>
+                <td>Gopal</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+    </table>
+    <fieldset>
+        <legend style="text-align: center;">User Registration Form</legend>
+        <form action="index.html" method="post">
+            <label for="name">Name:</label> <input type="text" id="name" name="name"
+                placeholder="Enter your name"><br><br>
+            <label for="email">Email:</label> <input type="email" id="email" name="email"
+                placeholder="Enter your email"><br><br>
+            <label for="password">Password:</label> <input type="password" id="password" name="password"
+                placeholder="Enter your password"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label> <br><br>
+            <label for="dob">Date of Booking:</label>
+            <input type="date" id="dob" name="dob" value=" " min="2026-10-25" max="2026-11-25"><br><br>
+            <label for="photo">Upload your Photo:</label>
+            <input type="file" id="photo" name="photo"><br><br>
+             <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+            <label for="preferredlocation">Preferred Location:</label><br>
+            <input type="checkbox" name="preferredlocation" value="Bangalore" checked>Bangalore<br><br>
+            <input type="checkbox" name="preferredlocation" value="Chennai">Chennai<br><br>
+            <input type="checkbox" name="preferredlocation" value="ooty">Ooty<br><br>
+            <input type="checkbox" name="preferredlocation" value="Pune">Pune<br><br>
+            <input type="submit" value="Submit"><input  type="reset" value="Reset">
+        </form>
+        </legend>
+    </fieldset>
+</body>
+
+</html>
